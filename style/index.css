@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'IBM Plex Sans', sans-serif;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+:root {
+    --mainColor: #0d1139;
+    --secondaryColor: #8bc3dd;
+    --tertiaryColor: #8c97a1;
+    --quarternaryColor: #5a4b47;
+    --shadow: 0px 0px 8px -4px rgba(0, 0, 0, 1);
+    --sizeH1: 20px;
+    --sizeP: 14px;
+    --gradientColor: linear-gradient(#8c97a1, #ffff);
+    ;
+}
+
+#logo {
+    height: 40px;
+    align-self: center;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--mainColor);
+    padding: 2vh;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+.navLinks {
+    color: var(--secondaryColor);
+    transition: 0.1s;
+    text-decoration: none;
+}
+
+.navLinks:hover {
+    opacity: 0.8;
+}
+
+.separationDiv {
+    height: 0.2vh;
+    background: radial-gradient(var(--secondaryColor), var(--mainColor));
+}
+
+#home {
+    background-image: url("/assets/background.jpg");
+    background-blend-mode: multiply;
+    background-color: var(--mainColor);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 95vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#presentation {
+    width: 80vw;
+}
+
+#presentation h1 {
+    color: white;
+}
+
+#presentation p {
+    color: var(--secondaryColor);
+}
+
+#servicos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15vh;
+    margin-bottom: 15vh;
+    gap: 20px;
+    color: var(--mainColor);
+}
+
+#cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    max-height: 590px;
+    max-width: 300px;
+    transition: 0.1s;
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+.card:hover {
+    opacity: 0.8;
+}
+
+.card img {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+}
+
+.card h1 {
+    font-size: var(--sizeH1);
+    text-align: center;
+    color: var(--mainColor);
+}
+
+.card a {
+    margin-bottom: 10px;
+    color: var(--secondaryColor);
+}
+
+.cardP {
+    margin: 1rem;
+    text-align: justify;
+    font-size: var(--sizeP);
+    color: var(--tertiaryColor);
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    background: var(--gradientColor);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+footer {
+    background-color: var(--mainColor);
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap-reverse;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+    gap: 10px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+footer ul li {
+    border-color: var(--secondaryColor);
+    border-style: solid;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 130px;
+    padding: 5px;
+    border-width: 1px;
+}
+
+#whatsappButton {
+    background-color: var(--secondaryColor);
+}
+
+#whatsappButton p {
+    color: var(--mainColor);
+}
+
+.footerElements li p {
+    color: var(--secondaryColor);
+}
+
+footer img {
+    width: 30px;
+}
+
+.footerElements {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.footerElements li {
+    transition: 0.1s;
+}
+
+.footerElements li:hover {
+    opacity: 0.8;
+}
+
+.footerElements h1 {
+    color: white;
+}
+
+.footerElements p {
+    color: var(--tertiaryColor);
+}
+
+iframe {
+    border-style: none;
+    border-radius: 1rem;
+}
